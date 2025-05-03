@@ -1,6 +1,6 @@
 public int getValueAt (int row, int col){
-    for (SpareseArray val : entries){
-        if (entry.getRow == row && entry.getCol == col){
+    for (SpareseArrayEntry val : entries){
+        if (entry.getNumRow == row && entry.getNumCol == col){
             return val;
         }
         else {
