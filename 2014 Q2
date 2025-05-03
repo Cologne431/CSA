@@ -7,4 +7,6 @@ public static int getPeakIndex (int[] array){
     return -1;
 }
 
-public static boolean isMountain(int[] array)
+public static boolean isMountain(int[] array){
+    return (getPeakIndex[i] >= 1 && array.isIncreasing(array, peak) && array.isDecresing(peak,array);
+}
