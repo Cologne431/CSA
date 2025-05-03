@@ -1,12 +1,16 @@
 private String recombine (String word1 String word2){
-    return word1.substring (0, word1.length()/2) + word2.substring (0, word2.length()/2);
+    return word1.substring (0, word1.length()/2) + word2.substring (word2.length()/2);
 }
 
 private String[] mixedWords(String[] words){
-    String[] wordsList = new String[words];
+    String[] wordsList = new String[words]; # Revise: String[] result = new String[word.length];
     for (int i = 0; i < array.length; i+=2){
-        wordsList.add(recombine word[i], word[i+1]);
+        wordsList.add(recombine word[i], word[i+1]); # Wrong! 不能加 .add
         }
     }
     return wordsList;
 }
+
+# Correct! result[i] = recombine (words[i], words[i + 1])
+# Correct! result[i + 1] = recombine (words[i + 1], words[i]
+# 最后 return result;
