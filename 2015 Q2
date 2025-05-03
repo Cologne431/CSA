@@ -1,1 +1,13 @@
+public class HiddenWord{
+    private String word;
 
+    public HiddenWord(string hiddenWord){
+        word = hiddenWord;
+    }
+
+    public String getHind (String guess){
+        for (int i = 0; i < guess.length; i++){
+            if (guess.subString (i, i+
+        }
+    }
+}
