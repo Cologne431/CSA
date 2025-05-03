@@ -6,8 +6,18 @@ public class HiddenWord{
     }
 
     public String getHind (String guess){
+        String hint = "";
         for (int i = 0; i < guess.length; i++){
-            if (guess.subString (i, i+
+            if (int !guess.indexOf(i) = -1 && int guess.substring (i, i+1) == int word.substring (i, i+1)){
+                hint += guess.substring (i, i+1);
+            }
+            else if (int !guess.indexOf(i) = -1 && int guess.substring (i, i+1) !== int word.substring (i, i+1)){
+                hint += "+";
+            }
+            else {
+                hint += "*"
+            }
         }
+        return hint;
     }
 }
