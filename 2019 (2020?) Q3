@@ -1,0 +1,23 @@
+public void addReview (ProductReview prodReview){
+  reviewList.add(prodReview);
+  
+  String prodName = prodReivew.getName ();
+  for (String n : productList){
+    if (!n.equals(prodName)){
+        productList.add(prodName);
+    }
+}
+
+
+public int getNumGoodReviews(String prodName){
+    int getNumGoodReviews = 0;
+    
+    for (ProductReview prodReview : reviewList){
+        if (prodName.equals(prodReview.getName()));
+            String review = prodReview.getReview();
+            if (review.equals("best")){
+                getNumReviews++:    
+        }
+    }
+    return getNumGoodReviews;
+}
