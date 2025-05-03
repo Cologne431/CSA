@@ -1,19 +1,9 @@
 public boolean record(int score){
     int i = 0;
-    while (i < 
+    ScoreInfo a = score.get(i);
+    while (i < scoreList.size){
+        if (score < a.getScore()){
+            i++;
+        }
+    }
 }
-
-public int removeColumn (int col){
-    int i = 0;
-    while (i < entries.size){
-        SparseArrayEntry v = entries.get(i);
-        if (v.get(col) == col){
-            entries.remove(i);
-    }    
-        else if (v.get(col) > col){
-            entries.set(i, new SparseArrayEntry (v.get(row),v.get(col), v.get(value));
-            i++;
-        }
-        else {
-            i++;
-        }
