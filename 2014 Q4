@@ -3,6 +3,7 @@ public boolean record(int score){
     ScoreInfo a = score.get(i);
     while (i < scoreList.size){
         if (score < a.getScore()){
+            scoreList.add(i, 
             i++;
         }
     }
