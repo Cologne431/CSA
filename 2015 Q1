@@ -19,8 +19,8 @@ public static int[] rowSums(int[][] arr2D){
 }
 
 public static boolean isDiverse(int[][] arr2D){
-    for (int i = 0; i < row.length; i++){
-        for (int j = i + 1; j < col.length + 1; j++){
+    for (int i = 0; i < col.length; i++){
+        for (int j = i + 1; j < col.length; j++){
             if (sum [i] == sum [j]){
                 return false;
         }
