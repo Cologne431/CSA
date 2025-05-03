@@ -1,10 +1,11 @@
 public boolean record(int score){
-    int i = 0;
-    ScoreInfo a = score.get(i);
-    while (i < scoreList.size){
-        if (score < a.getScore()){
-            scoreList.add(i, 
-            i++;
+    for (int i = 0; i < scoreList.size; i++){
+        ScoreInfo a = scoreList.get(i);
+        if (a.getScore() == score){
+            a.add();
+            return false;
         }
+        else if 
+    
     }
 }
