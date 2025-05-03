@@ -1,1 +1,5 @@
-
+private double computeTemp (int row, int col){
+    if (col == 0 || row == 0 || col == temps.length - 1 || row == temps[0].length - 1){
+        return 
+    }
+}
