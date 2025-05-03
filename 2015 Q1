@@ -18,12 +18,24 @@ public static int[] rowSums(int[][] arr2D){
     return arraySum;
 }
 
+# Revised b
+    int sum = 0;
+    for (int[] arr : arr2D){
+        sum += arraySum [arr];
+    }
+# Ends
+
+# Revised c
 public static boolean isDiverse(int[][] arr2D){
-    for (int i = 0; i < col.length; i++){
-        for (int j = i + 1; j < col.length; j++){
-            if (sum [i] == sum [j]){
+    for (int i = 0; i < arr2D.length; i++){
+        for (int j = i + 1; j < arr2D.length; j++){
+            if (arraySum(arr2D[i]) == arraySum(arr2D[j])){
                 return false;
         }
     return true;
     }        
 }
+
+
+    
+    
