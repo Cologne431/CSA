@@ -1,8 +1,8 @@
 public class HiddenWord{
-    private String word;
+    private String word; # Variable
 
-    public HiddenWord(string hiddenWord){
-        word = hiddenWord;
+    public HiddenWord(string hiddenWord){ # Contructor: HiddenWord puzzle = new HiddenWord ("HARPS"); inport values
+        word = hiddenWord; 
     }
 
     public String getHind (String guess){
@@ -21,3 +21,10 @@ public class HiddenWord{
         return hint;
     }
 }
+# String的length有括号，length()
+# Array的length没有括号，arr.length
+# B.indexOf ("A") 表示A是不是在B里
+
+# Revised :
+# if (word.indexOf(guess. substring(i, i+1))
+# else if (word.substring(i, i+1).equals(guess.substring(i, i+1))
