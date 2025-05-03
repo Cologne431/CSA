@@ -1,0 +1,24 @@
+public static int arraySum(int[] arr){
+    int sum1 = 0;
+    for (int val : arr1){
+        sum1 += val;
+    }
+    return sum1;
+}
+
+public static int[] rowSums(int[][] arr2D){
+    int rowSum = 0;
+    int arraySum = 0;
+    for (int row : arr2D){
+        for(int val : row){
+            rowSum += val;
+        }
+        arraySum += rowSum;   
+    }
+    return arraySum;
+}
+
+public static boolean isDiverse(int[][] arr2D){
+      
+        
+}
