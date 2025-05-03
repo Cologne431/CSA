@@ -7,6 +7,9 @@ public int getValueAt (int row, int col){
             return 0
         }
     }
-}
 
-    public int removeColumn 
+    public int removeColumn (int col){
+        
+    }    
+
+}
