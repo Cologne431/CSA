@@ -1,0 +1,12 @@
+private String recombine (String word1 String word2){
+    return word1.substring (0, word1.length()/2) + word2.substring (0, word2.length()/2);
+}
+
+private String[] mixedWords(String[] words){
+    String[] wordsList = new String[words];
+    for (int i = 0; i < array.length; i+=2){
+        wordsList.add(recombine word[i], word[i+1]);
+        }
+    }
+    return wordsList;
+}
