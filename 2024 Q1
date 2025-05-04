@@ -1,0 +1,24 @@
+public static int ballThrow(){
+    int[] scores = {10, 20, 30, 40, 50};
+    int index = (int) (Math.random()*5);
+    return scores[index];
+}
+
+public static double averageThrow(int numThrows, int minScore){
+    int count = 0;
+    double totalScore = 0;
+    int score = ballThrow();
+
+    for (int i = 0; i < numThrows; i++){
+        int score = ballThrow();
+        totalScore += score;
+        count++:
+    }
+    if (count > 0){
+        return double (totalScore / count);
+    }
+    else {
+        return 0.0 
+    }
+}
+
